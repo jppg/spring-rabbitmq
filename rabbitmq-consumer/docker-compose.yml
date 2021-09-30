@@ -1,0 +1,20 @@
+version: '3'
+services:
+  consumer1:
+    image: rabbitmq-consumer-test:latest
+    container_name: rabbitmq_cons1
+    network_mode: host
+    expose:
+      - "9010"
+  consumer2:
+    image: rabbitmq-consumer-test:latest
+    container_name: rabbitmq_cons2
+    network_mode: host
+    expose:
+      - "9011"
+  consumer3:
+    image: rabbitmq-consumer-test:latest
+    container_name: rabbitmq_cons3
+    network_mode: host
+    expose:
+      - "9012"

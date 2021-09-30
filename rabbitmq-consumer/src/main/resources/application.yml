@@ -1,0 +1,6 @@
+spring:
+  rabbitmq:
+    user: guest
+    password: guest
+    host: host.docker.internal
+    port: 5672
